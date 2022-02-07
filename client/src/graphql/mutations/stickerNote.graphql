@@ -1,0 +1,3 @@
+mutation StickerNote($noteId: Int!, $value: Int!){
+  sticker(noteId: $noteId, value: $value)
+}

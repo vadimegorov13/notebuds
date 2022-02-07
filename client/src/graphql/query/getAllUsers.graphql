@@ -1,0 +1,8 @@
+query GetAllUsers($limit: Int!, $offset: Int) {
+  getAllUsers(limit: $limit, offset: $offset) {
+    users {
+      ...UserParameters
+    }
+    hasMore
+  }
+}

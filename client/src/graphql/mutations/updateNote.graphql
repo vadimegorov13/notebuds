@@ -1,0 +1,5 @@
+mutation UpdateNote($_id: Int!, $input: NoteInput!) {
+  updateNote(_id: $_id, input: $input) {
+    ...NoteResponseParameters
+  }
+}

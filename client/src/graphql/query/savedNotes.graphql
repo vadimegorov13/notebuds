@@ -1,0 +1,8 @@
+query SavedNotes($limit: Int!) {
+  savedNotes(limit: $limit) {
+    notes {
+      ...NoteParameters
+    }
+    hasMore
+  }
+}

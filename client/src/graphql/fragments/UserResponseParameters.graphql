@@ -1,0 +1,8 @@
+fragment UserResponseParameters on UserResponse {
+  errors {
+    ...ErrorParameters
+  }
+  user {
+    ...UserParameters
+  }
+}

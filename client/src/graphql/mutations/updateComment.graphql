@@ -1,0 +1,5 @@
+mutation UpdateComment($_id: Int!, $text: String!) {
+  updateComment(_id: $_id, text: $text) {
+    ...CommentResponseParameters
+  }
+}

@@ -1,0 +1,8 @@
+query SearchMyNotes($search: String, $limit: Int!, $offset: Int) {
+  searchMyNotes(search: $search, limit: $limit, offset: $offset) {
+    notes {
+      ...NoteParameters
+    }
+    hasMore
+  }
+}

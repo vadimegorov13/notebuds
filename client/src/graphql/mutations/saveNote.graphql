@@ -1,0 +1,3 @@
+mutation SaveNote($noteId: Int!, $value: Int!) {
+  save(noteId: $noteId, value: $value)
+}

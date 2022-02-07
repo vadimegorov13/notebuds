@@ -1,0 +1,5 @@
+mutation updateEmail($input: EmailUpdateInput!) {
+  updateEmail(input: $input) {
+    ...UserResponseParameters
+  }
+}

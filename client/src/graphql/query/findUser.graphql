@@ -1,0 +1,5 @@
+query FindUser($username: String!) {
+  findUser(username: $username) {
+    ...UserParameters
+  }
+}

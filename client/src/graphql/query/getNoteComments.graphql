@@ -1,0 +1,8 @@
+query GetNoteComments($noteId: Int!, $limit: Int!, $offset: Int) {
+  noteComments(noteId: $noteId, limit: $limit, offset: $offset) {
+    comments {
+      ...CommentParameters
+    }
+    hasMore
+  }
+}

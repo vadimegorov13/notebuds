@@ -1,0 +1,5 @@
+mutation UpdateScope($input: ScopeUpdateInput!) {
+  updateScope(input: $input) {
+    ...UserResponseParameters
+  }
+}

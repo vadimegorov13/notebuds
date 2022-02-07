@@ -1,0 +1,5 @@
+query GetNote($_id: Int!) {
+  note(_id: $_id) {
+    ...NoteParameters
+  }
+}

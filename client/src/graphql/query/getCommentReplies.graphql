@@ -1,0 +1,8 @@
+query GetCommentReplies($parentId: Int!, $limit: Int!, $offset: Int) {
+  childComments(parentId: $parentId, limit: $limit, offset: $offset) {
+    comments {
+      ...CommentParameters
+    }
+    hasMore
+  }
+}

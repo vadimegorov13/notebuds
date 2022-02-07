@@ -1,0 +1,25 @@
+fragment NoteParameters on Note {
+  _id
+  title
+  text
+  textSnippet
+  isPrivate
+  tags
+
+  commentPoints
+  viewsPoints
+
+  stickerPointStatus
+  stickerPoints
+
+  savePoints
+  savePointStatus
+
+  authorId
+  author {
+    ...UserParameters
+  }
+
+  createdAt
+  updatedAt
+}

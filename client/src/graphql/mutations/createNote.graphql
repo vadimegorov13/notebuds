@@ -1,0 +1,5 @@
+mutation CreateNote($input: NoteInput!) {
+  createNote(input: $input) {
+    ...NoteResponseParameters
+  }
+}

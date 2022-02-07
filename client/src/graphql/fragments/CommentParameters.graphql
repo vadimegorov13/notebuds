@@ -1,0 +1,32 @@
+fragment CommentParameters on Comment {
+  _id
+  noteId
+  text
+  isEdited
+  createdAt
+  updatedAt
+
+  author {
+    ...UserParameters
+  }
+
+  parentId
+
+  parent {
+    _id
+    text
+    author {
+      ...UserParameters
+    }
+  }
+
+  childrenIds
+
+  children {
+    _id
+    text
+    author {
+      ...UserParameters
+    }
+  }
+}

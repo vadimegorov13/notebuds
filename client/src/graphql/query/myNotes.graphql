@@ -1,0 +1,8 @@
+query myNotes($limit: Int!, $offset: Int) {
+  myNotes(limit: $limit, offset: $offset) {
+    notes {
+      ...NoteParameters
+    }
+    hasMore
+  }
+}

@@ -1,0 +1,5 @@
+query GetComment($_id: Int!) {
+  comment(_id: $_id) {
+    ...CommentParameters
+  }
+}

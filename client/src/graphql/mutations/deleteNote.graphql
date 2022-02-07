@@ -1,0 +1,3 @@
+mutation DeleteNote($_id: Int!) {
+  deleteNote(_id: $_id)
+}

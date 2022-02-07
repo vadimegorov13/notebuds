@@ -1,0 +1,8 @@
+fragment NoteResponseParameters on NoteResponse {
+  errors {
+    ...ErrorParameters
+  }
+  note {
+    ...NoteParameters
+  }
+}

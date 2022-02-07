@@ -1,0 +1,8 @@
+fragment CommentResponseParameters on CommentResponse {
+  errors {
+    ...ErrorParameters
+  }
+  comment {
+    ...CommentParameters
+  }
+}

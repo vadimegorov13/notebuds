@@ -1,0 +1,8 @@
+query SearchUsers($search: String, $limit: Int!, $offset: Int) {
+  searchUsers(search: $search, limit: $limit, offset: $offset) {
+    users {
+      ...UserParameters
+    }
+    hasMore
+  }
+}

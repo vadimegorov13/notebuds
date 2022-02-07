@@ -1,0 +1,8 @@
+query BlockedUsers($limit: Int!, $offset: Int) {
+  blockedUsers(limit: $limit, offset: $offset) {
+    users {
+      ...UserParameters
+    }
+    hasMore
+  }
+}
